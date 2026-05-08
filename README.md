@@ -6,7 +6,7 @@ This assistant supports:
 
 - Product lookups by  name, or description
 - Price-based queries
-- Semantic search in multi-page PDFs (catalogs, handbooks, flyers)
+- Semantic search in multi-page PDFs (catalogs, handbooks)
 
 ## Configuration
 
