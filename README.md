@@ -4,9 +4,21 @@ Enterprise Assistant is a Retrieval-Augmented Generation (RAG) system built for 
 
 This assistant supports:
 
-- Product lookups by  name, or description
+- Product lookups by  name, or description(catalogs)
 - Price-based queries
-- Semantic search in multi-page PDFs (catalogs, handbooks)
+- Semantic search in multi-page PDFs (Return Policy, Handbooks)
+
+## Documents Used
+
+This project is built using the following reference documents:
+- Return & Exchange Policy Document
+- Rewards Handbook
+- Product Catalog
+- Inventory Snapshot
+
+These documents are processed into embeddings and stored in a FAISS vector database for semantic search.
+
+
 
 ## Configuration
 
@@ -55,7 +67,10 @@ A: The Smartphone X200 is priced at **15,999**.
 Q: what are products available in apparel?
 
 A:**Apparel products:**
-SKU: 2006 | Formal Blue Shirt | Price: 1299
+
+- SKU: 2006 | Formal Blue Shirt | Price: 1299
+- SKU: 2015 | Winter Jacket | Price: 3499
+- SKU: 2001 | Classic White T‑Shirt | Price: 499
 
 
 ## 📂 Project Structure
@@ -73,5 +88,4 @@ Enterprise-Rag-Assistant
 │── .venv/                # Virtual environment
 │── app.py               # Sreamlit Entry point (outside app folder)
 
-SKU: 2015 | Winter Jacket | Price: 3499
-SKU: 2001 | Classic White T‑Shirt | Price: 499
+
